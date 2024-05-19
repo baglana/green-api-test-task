@@ -34,17 +34,31 @@ span {
   grid-template-columns: 1fr 1fr;
   padding: 10px 10px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #cacaca;
   gap: 50px;
 }
 
-.date-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.column {
+  display: grid;
+  grid-auto-rows: auto 1fr;
   gap: 5px;
+  
+  & > section {
+    display: grid;
+    margin: 1rem 0;
+    gap: 1rem;
+  }
 }
 
 input {
   min-width: 300px;
+}
+
+.section-title {
+  margin-block-start: 0;
+  margin: 1.1rem;
+}
+
+output {
+  border: 1px solid gray;
+  border-radius: 5px;
 }

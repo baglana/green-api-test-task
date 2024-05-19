@@ -17,30 +17,36 @@
 <body>
 <div class="container">
     <form class="form-wrapper">
-        <div class="date-container">
+        <div class="column">
             <!-- Instance Data -->
-            <input id="idInstance" name="idInstance" placeholder="idInstance" required type="text" value="7103937383">
-            <input id="apiTokenInstance" name="apiTokenInstance" placeholder="apiTokenInstance" required
-                   type="text"
-                   value="5c9c74e03ec14287ab4c0ee2bee6d3ad11a4ebafe96e4c2db3">
-            <button class="button buttonGreen" id="getSettings" type="button">getSettings</button>
-            <button class="button buttonGreen" id="getStateInstance" type="button">getStateInstance</button>
+            <section>
+                <input id="idInstance" name="idInstance" placeholder="idInstance" required type="text">
+                <input id="apiTokenInstance" name="apiTokenInstance" placeholder="apiTokenInstance" required
+                       type="text">
+            </section>
+
+            <section>
+                <button class="button buttonGreen" id="getSettings" type="button">getSettings</button>
+                <button class="button buttonGreen" id="getStateInstance" type="button">getStateInstance</button>
+            </section>
 
             <!-- Send message -->
-            <input id="phoneNumber" name="phoneNumber" placeholder="77771234567" required type="tel"
-                   value="77776861633">
-            <input id="messageText" name="messageText" required type="text" value="Hello world!">
-            <button class="button buttonGreen" id="sendMessageBtn" type="button">Send Message</button>
+            <section>
+                <input id="phoneNumber" name="phoneNumber" placeholder="77771234567" required type="tel">
+                <input id="messageText" name="messageText" required type="text" value="Hello world!">
+                <button class="button buttonGreen" id="sendMessageBtn" type="button">Send Message</button>
+            </section>
 
             <!-- Send file by URL -->
-            <input id="phoneNumber-uploadByUrl" name="phoneNumber" placeholder="77076665544" required type="tel"
-                   value="77776861633">
-            <input id="fileByUrl" name="fileUrl" placeholder="https://my.site.com/img/horse.png" type="text"
-                   value="https://drive.google.com/file/d/1DH-42vtO9Pu2QWzJ18M92XHmnITe15zv/view">
-            <input id="fileName" name="fileExtention" placeholder="Write your file name and file extention" type="text">
-            <button class="button buttonGreen" id="sendFileByUrlBtn" type="button">sendFileByUrl</button>
+            <section>
+                <input id="phoneNumber-uploadByUrl" name="phoneNumber" placeholder="77076665544" required type="tel">
+                <input id="fileByUrl" name="fileUrl" placeholder="https://my.site.com/img/horse.png" type="text">
+                <input id="fileName" name="fileExtention" placeholder="Write your file name and file extention"
+                       type="text">
+                <button class="button buttonGreen" id="sendFileByUrlBtn" type="button">sendFileByUrl</button>
+            </section>
         </div>
-        <div class="date-container">
+        <div class="column">
             <h5 class="section-title">Ответ:</h5>
             <output id="output"></output>
         </div>
